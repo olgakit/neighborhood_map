@@ -9,9 +9,11 @@ Neighborhood Map: Application showing museum locations in Moscow. The list of mu
 
 ## Instructions ##
 
-To run the application locally, clone the github repository: https://github.com/olgakit/neighborhood_map.
+To run the application locally, clone the GitHub repository: https://github.com/olgakit/neighborhood_map.
 
 In the code editor, run 'npm install' and 'npm start' to open the localhost.
+
+The GitHub pages version: https://olgakit.github.io/react_github_pgs/.
 
 ## Credits ##
 
@@ -23,6 +25,8 @@ Hamburger Menu Icon credit to Font Awesome: https://fontawesome.com/
 
 Using screen width in if-statement: 
 https://techstacker.com/posts/XXjho5wLJdLzFNDpT/javascript-detect-if-screen-width-is-greater-or-less-than
+
+Instructions for Deploying a React App* to GitHub Pages: https://github.com/gitname/react-gh-pages
 
 ## Contributing ##
 

@@ -104,7 +104,7 @@ class App extends Component {
         <Sidebar {...this.state} 
         handleOneLocationClick = {this.handleOneLocationClick}
         />
-        <div className="rightSide">
+        <div className="rightSide" role="application">
           <UpperMenu 
           toggleSideBar={this.toggleSideBar}
           />

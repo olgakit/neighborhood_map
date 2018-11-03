@@ -35,7 +35,7 @@ export default class Sidebar extends Component {
     this.props.updateSuperState({markers});
   }
   render() {
-    return(<div id={"sidebar"}>
+    return(<div id={"sidebar"} aria-label={"sidebar"}>
       <h2>Moscow Museums</h2>
       <input tabIndex="1" type={"search"} id={"search"} placeholder={"Filter Locations"} onChange={this.handleChange} />
       <Locations {...this.props} venues={this.handleFilter()} handleOneLocationClick = {this.props.handleOneLocationClick} />

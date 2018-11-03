@@ -96,13 +96,18 @@ ul.locations {
   width: 200px !important;
 }
 
+.gm-style .gm-style-iw {
+  overflow: scroll;
+  font-size: 12px;
+}
+
 @viewport {
   zoom: 1.0;
 }
 
 @media screen and (max-width: 450px) and (min-width: 320px) {
   .gm-style-iw {
-    height: 200px !important;
+    height: 220px !important;
     width: 175px !important;
   }
 }

@@ -28,6 +28,10 @@ https://techstacker.com/posts/XXjho5wLJdLzFNDpT/javascript-detect-if-screen-widt
 
 Instructions for Deploying a React App* to GitHub Pages: https://github.com/gitname/react-gh-pages
 
+Async google map error handling:
+https://stackoverflow.com/questions/45633672/detect-query-limit-message-on-map-load-with-google-maps-javascript-api
+https://discussions.udacity.com/t/handling-google-maps-in-async-and-fallback/34282
+
 ## Contributing ##
 
 Will review and approve pull requests in github if they improve functionaluty. 

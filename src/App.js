@@ -97,7 +97,6 @@ class App extends Component {
     }
   }
 
-
   render() {
     return(
       <div className="App"> 
@@ -108,7 +107,7 @@ class App extends Component {
           <UpperMenu 
           toggleSideBar={this.toggleSideBar}
           />
-          <Map {...this.state} handleMarkerClick = {this.handleMarkerClick}/>
+          <Map {...this.state} handleMarkerClick = {this.handleMarkerClick} />
         </div>
       </div>
     );

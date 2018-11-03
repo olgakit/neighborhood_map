@@ -34,17 +34,45 @@ const MyMapComponent = withScriptjs(
   ))
 );
 
+
+
 export default class Map extends Component {
-  
+
+  constructor() {
+    super();
+    this.state = {
+      error: false
+    };
+  }
+
+  componentDidMount() {
+    window.gm_authFailure = () => {
+      this.setState({ error: true });
+    };
+  }
+
+  // googleError() {
+  //   alert('Google map failed to load');
+  // }  
   render() {
   
     return(
-      <MyMapComponent
-        {...this.props}
-        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC6N51tzFpr0eYV83a2uOIQhGW6DkTVAuc"
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `95%`, width: `100%`}} />}
-        mapElement={<div style={{ height: `100%`}} />} />    
+      <div className="rightSide">
+        {!this.state.error && (
+          <MyMapComponent
+          {...this.props}
+          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC6N51tzFpr0eYV83a2uOIQhGW6DkTVAuc"
+          loadingElement={<div style={{ height: `100%` }} />}
+          containerElement={<div style={{ height: `95%`, width: `100%`}} />}
+          mapElement={<div style={{ height: `100%`}} />} 
+          /> 
+        )}
+        {this.state.error && (
+          <h3 style={{textAlign: "center", paddingTop: "10em", color: "crimson"}}>Google Map failed to load :'( </h3>
+        )}
+        
+      </div>
+      
     );
   }
 }

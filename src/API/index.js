@@ -40,7 +40,9 @@ class Helper {
         urlPrams
       )}`,
       requestData
-    ).then(res => res.json());
+    ).then(res => res.json()).catch(error => {
+      alert('Error while loading FourSquare');
+    });
   }
 }
 

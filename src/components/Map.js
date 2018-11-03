@@ -51,9 +51,6 @@ export default class Map extends Component {
     };
   }
 
-  // googleError() {
-  //   alert('Google map failed to load');
-  // }  
   render() {
   
     return(

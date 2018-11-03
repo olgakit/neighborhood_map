@@ -15,6 +15,8 @@ In the code editor, run 'npm install' and 'npm start' to open the localhost.
 
 The GitHub pages version: https://olgakit.github.io/react_github_pgs/.
 
+The service worker (SW) in production mode is equipped to serve assets from local cache. SW is not available in development mode. 
+
 ## Credits ##
 
 Imported Google Maps library: https://tomchentw.github.io/react-google-maps/ (used Step 4)

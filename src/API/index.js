@@ -1,6 +1,6 @@
 class Helper {
   static baseURL() {
-    return "https://api.foursquare.com/v2";
+    return "https://api.foursquare.com/v3";
   }
 
   static auth() {
